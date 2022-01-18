@@ -1,6 +1,6 @@
 <div class="bg-dark container-fluid">
   <h2 class="text-center text-muted">{{ title }}</h2>
-  <div class="p-5 text-center" *ngIf="jokesRes; else loadingBlock">
+  <div class= "p-15 text-center" *ngIf="jokesRes; else loadingBlock">
     {{ counter }}
     <app-jokes [jokesRes]="jokesRes"></app-jokes>
     <button (click)="newJoke()" class="btn btn-primary">New Joke</button>
