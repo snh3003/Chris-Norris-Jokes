@@ -1,7 +1,13 @@
 <div class=" card d-flex flex-row">
     <div class="card-body ">
-        <p class="text-muted">{{ date | date }}</p>
-        <p>{{ joke }}</p>
+        <div class="d-flex  flex-col">
+            <fa-icon class="text-primary px-3" [icon]="faClock" ></fa-icon>
+            <p class="px-3 text-muted">{{ date | date }}</p>
+        </div>
+        <div class="d-flex flex-col">
+            <fa-icon class="text-warning" [icon]="faComments" ></fa-icon>
+            <p>{{ joke }}</p>
+        </div>
     </div>
     <div class="card-img p-5 m-4 border-success">
         <img src="{{ iconURL }}" alt="Chuck norris">

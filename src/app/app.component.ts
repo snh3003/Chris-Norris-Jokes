@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs';
+
 import { ApiConfigService } from './services/api-config.service';
 
 @Component({
@@ -8,16 +8,12 @@ import { ApiConfigService } from './services/api-config.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-
   title = 'Chris Norris Jokes';
 
-  constructor(private apiConfigService: ApiConfigService) {
+  constructor(private apiConfigService: ApiConfigService) {}
 
-  }
-  
-  
   jokesRes: any;
-  
+
   counter: number = 5;
   timer: ReturnType<typeof setTimeout> = setTimeout(() => {
     this.count;
